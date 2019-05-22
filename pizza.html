@@ -1,0 +1,125 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Blackstone Bistro: Pizza-on-Demand</title>
+   <style type="text/css">
+       ol, ul {
+           list-style-type: none;
+       }
+       
+       fieldset {
+           border-color: yellow;
+       }
+       
+       h1 {
+           color: red;
+       }
+       
+       h2 {
+           color: red;
+       }
+          
+       
+       input {
+           margin:10px 0px;
+           padding: 10px 100px;
+           
+       }
+       
+       input[type=submit] {
+           background-color: greenyellow;
+       }
+       
+       input[type=reset] {
+           background-color: greenyellow;
+       }
+
+   </style>
+</head>
+<body>
+<h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+    
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">    
+<p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+<fieldset>
+    <legend><b>Your Information</b></legend>
+<ul>
+  <label><li>Name:<input type="text" name="username"  placeholder="Your Name.."></li></label>
+   
+    
+  <label for="address"><li>
+      Address: <input type="text" name="address"  placeholder="Your Address..">
+      </li></label>
+   
+    
+  <label for="telephone"><li>
+      Telephone Number:<input type="number" name="telephone" placeholder="Your Number...">
+      </li></label>
+      
+  <label for="email"><li>
+      Email:<input type="email" name="email" placeholder="Email Address..">
+      </li></label>
+    
+      
+ <label for=delivery instriction><li>
+     Delivery instructions: <textarea name="comments" maxlength=1000></textarea>
+      </li></label>
+   
+</ul>
+</fieldset>
+
+<fieldset><legend><h2>Design Your Dream Pizza:</h2></legend>
+<p>Pizza specs<p>
+
+
+<label for="crust"><p>Crust <em>(Choose one)</em>:</p></label>
+    <select id="crust" name="crust">
+        <option>Classic white</option>
+        <option>Multigrain</option>
+        <option>Cheese-stuffed crust</option>
+        <option>Gluten-free</option>
+        <option>Thin crust</option>
+        <option>Thick crust</option>
+    </select>
+
+    
+<fieldset>   
+<legend><label for="toppings"><p>Toppings<em> (Choose as many as you want)</em>:</p></label></legend>
+<ul>
+    <li><input type="radio" name="toppings" value="red sauce">Red sauce</li>
+    
+    <li><input type="radio" name="toppings" value="white sauce">White sauce</li>
+    
+    <li><input type="checkbox" name="toppings" value="Mozzarella cheese">Mozzarella Cheese</li>
+    
+    <li><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</li>
+    
+    <li><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</li>
+    
+    <li><input type="checkbox" name="toppings" value="Peppers">Peppers</li>
+    
+    <li><input type="checkbox" name="toppings" value="Anchovies">Anchovies</li>
+    
+    <li><input type="checkbox" name="toppings" value="Sausage">Sausage</li>
+    
+    <li><input type="checkbox" name="toppings" value="Bacon">Bacon</li>
+    
+    <li><input type="checkbox" name="toppings" value="Pineapples">Pineaples</li>
+</ul>
+</fieldset>
+</fieldset>
+
+<label><p>Number:<input type="number" name="pizzas" min="1" max="10" placeholder="How many pizzas"></p></label>
+
+<p><label>Prefered Time:<input type="time" min="10:00" max="8:00"></label></p>
+
+    
+    
+<p><input type="submit" value="Create My Pizza"><input type="Reset" value="Reset"></p>
+
+</form>
+</body>
+</html>
